@@ -10,9 +10,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ncruz-dev/microservice-config.git
+          uri: https://github.com/ncruz-dev/DI-SCDDD-microservice-config.git
           default-label: main
           clone-on-start: true
+          username: ncruz-dev
+          password: ${GIT_TOKEN}
 
 eureka:
   instance:
